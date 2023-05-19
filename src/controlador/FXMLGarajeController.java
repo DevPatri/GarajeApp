@@ -106,6 +106,7 @@ public class FXMLGarajeController implements Initializable {
         pNumRuedas.setDisable(true);
     }
 //configuración para que cuando esté seleccionado moto, se anulen las que no les corresponden.
+
     @FXML
     private void selectMoto(ActionEvent event) {
         pNumRuedas.setDisable(false);
@@ -132,8 +133,6 @@ public class FXMLGarajeController implements Initializable {
             crearIndustrial();
 
         }
-        //Inicializamos la listview donde guardamos todas las entradas. Si no la pongo aquí me da error.
-        lvVista = new ListView<>(vehiculos);
     }
 
     //método para borrar vehiculos de la lista
@@ -142,10 +141,10 @@ public class FXMLGarajeController implements Initializable {
         Vehiculo v = this.lvVista.getSelectionModel().getSelectedItem();
 
         this.vehiculos.remove(v);
-        this.lvVista.refresh();
-        System.out.println("___");
+        this.lvVista.refresh();        
     }
 //método para crear un vehiculo tipo turismo.
+
     private void crearTurismo() {
         Turismo coche;
         TipoCarroceria tipoCa = cbTipoCarroceria.getValue();
