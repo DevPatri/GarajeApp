@@ -63,7 +63,7 @@
       <Pane fx:id="pDatos" layoutX="11.0" layoutY="321.0" prefHeight="268.0" prefWidth="879.0">
          <children>
             <ListView fx:id="lvVista" editable="true" fixedCellSize="20.0" layoutX="12.0" layoutY="36.0" prefHeight="223.0" prefWidth="853.0" />
-            <Text layoutX="22.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Datos vehículo" />
+            <Text layoutX="14.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Datos vehículos" wrappingWidth="101.0" />
          </children>
       </Pane>
    </children>
