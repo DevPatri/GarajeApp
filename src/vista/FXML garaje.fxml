@@ -24,24 +24,24 @@
             <RadioButton fx:id="rbIndustrial" layoutX="34.0" layoutY="162.0" mnemonicParsing="false" onAction="#selectIndus" prefHeight="0.0" prefWidth="101.0" text="Industrial" toggleGroup="$tipoVehiculo" />
             <Text layoutX="32.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Elige tipo de vehículo" />
             <ComboBox fx:id="cbTipoCombustible" layoutX="203.0" layoutY="33.0" prefHeight="27.0" prefWidth="197.0" promptText="Elige tipo de combustible" />
-            <ComboBox fx:id="cbTipoCarroceria" layoutX="203.0" layoutY="81.0" prefHeight="27.0" prefWidth="197.0" promptText="Elige tipo de carroceria" />
+            <ComboBox fx:id="cbTipoCarroceria" layoutX="203.0" layoutY="89.0" prefHeight="27.0" prefWidth="197.0" promptText="Elige tipo de carroceria" />
             <Pane fx:id="pNumRuedas" layoutX="441.0" layoutY="23.0" prefHeight="148.0" prefWidth="141.0">
                <children>
                   <Text layoutX="32.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Elige número de ruedas" wrappingWidth="87.46092987060547" />
-                  <RadioButton fx:id="rb2" layoutX="43.0" layoutY="51.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="43.0" text="2">
+                  <RadioButton fx:id="rb2" layoutX="43.0" layoutY="54.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="43.0" text="2">
                      <toggleGroup>
                         <ToggleGroup fx:id="numRuedas" />
                      </toggleGroup></RadioButton>
-                  <RadioButton fx:id="rb3" layoutX="43.0" layoutY="82.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="43.0" text="3" toggleGroup="$numRuedas" />
-                  <RadioButton fx:id="rb4" layoutX="43.0" layoutY="112.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="43.0" text="4" toggleGroup="$numRuedas" />
+                  <RadioButton fx:id="rb3" layoutX="43.0" layoutY="89.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="43.0" text="3" toggleGroup="$numRuedas" />
+                  <RadioButton fx:id="rb4" layoutX="43.0" layoutY="124.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="43.0" text="4" toggleGroup="$numRuedas" />
                </children>
             </Pane>
-            <TextField fx:id="tfLargo" layoutX="253.0" layoutY="134.0" prefHeight="26.0" prefWidth="65.0" promptText="Ingrese el largo de su vehículo" />
-            <TextField fx:id="tfAncho" layoutX="252.0" layoutY="170.0" prefHeight="26.0" prefWidth="65.0" promptText="Ingrese el ancho de su vehículo" />
-            <TextField fx:id="tfAlto" layoutX="252.0" layoutY="207.0" prefHeight="26.0" prefWidth="65.0" promptText="Ingrese el alto de su vehículo" />
-            <Label layoutX="208.0" layoutY="140.0" text="Largo" />
-            <Label layoutX="204.0" layoutY="174.0" text="Ancho" />
-            <Label layoutX="217.0" layoutY="211.0" text="Alto" />
+            <TextField fx:id="tfLargo" layoutX="253.0" layoutY="154.0" prefHeight="26.0" prefWidth="65.0" promptText="Ingrese el largo de su vehículo" />
+            <TextField fx:id="tfAncho" layoutX="252.0" layoutY="190.0" prefHeight="26.0" prefWidth="65.0" promptText="Ingrese el ancho de su vehículo" />
+            <TextField fx:id="tfAlto" layoutX="252.0" layoutY="227.0" prefHeight="26.0" prefWidth="65.0" promptText="Ingrese el alto de su vehículo" />
+            <Label layoutX="208.0" layoutY="160.0" text="Largo" />
+            <Label layoutX="204.0" layoutY="194.0" text="Ancho" />
+            <Label layoutX="217.0" layoutY="231.0" text="Alto" />
             <TextField fx:id="tfMarca" layoutX="670.0" layoutY="25.0" />
             <Label layoutX="621.0" layoutY="31.0" text="Marca" />
             <TextField fx:id="tfModelo" layoutX="670.0" layoutY="60.0" />
@@ -56,8 +56,10 @@
             <Label layoutX="622.0" layoutY="200.0" text="Precio" />
             <Button fx:id="btguardar" layoutX="601.0" layoutY="253.0" mnemonicParsing="false" onAction="#guardarVehiculo" prefHeight="30.0" prefWidth="125.0" text="Guardar vehículo" />
             <Button fx:id="btBorrar" layoutX="732.0" layoutY="253.0" mnemonicParsing="false" onAction="#borrarVehiculo" prefHeight="30.0" prefWidth="125.0" text="Borrar vehículo" />
-            <TextField fx:id="tfTamañoCaja" layoutX="350.0" layoutY="159.0" prefHeight="26.0" prefWidth="101.0" />
-            <Label layoutX="345.0" layoutY="139.0" text="Tamaño de la caja" />
+            <TextField fx:id="tfTamañoCaja" layoutX="390.0" layoutY="219.0" prefHeight="26.0" prefWidth="101.0" />
+            <Label layoutX="385.0" layoutY="199.0" text="Tamaño de la caja" />
+            <Label layoutX="203.0" layoutY="14.0" text="Tipo de combustible" />
+            <Label layoutX="203.0" layoutY="69.0" text="Tipo de carrocería" />
          </children>
       </Pane>
       <Pane fx:id="pDatos" layoutX="11.0" layoutY="321.0" prefHeight="268.0" prefWidth="879.0">

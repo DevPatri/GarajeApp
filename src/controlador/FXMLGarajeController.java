@@ -20,6 +20,7 @@ import garaje.TipoMedidas;
 import garaje.Vehiculo;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 
 /**
@@ -49,7 +50,6 @@ public class FXMLGarajeController implements Initializable {
     private RadioButton rb3;
     @FXML
     private RadioButton rb4;
-    @FXML
     private ObservableList<Vehiculo> vehiculos;
     @FXML
     private ListView<Vehiculo> lvVista;
@@ -138,10 +138,14 @@ public class FXMLGarajeController implements Initializable {
     //método para borrar vehiculos de la lista
     @FXML
     private void borrarVehiculo(ActionEvent event) {
+        Alert alerta = new Alert(Alert.AlertType.INFORMATION);
         Vehiculo v = this.lvVista.getSelectionModel().getSelectedItem();
 
         this.vehiculos.remove(v);
-        this.lvVista.refresh();        
+        this.lvVista.refresh();
+        alerta.setTitle("AVISO");
+        alerta.setContentText("El vehículo: "+ v.getMarca() + " " + v.getModelo() + "ha sido eliminado.");
+        alerta.showAndWait();
     }
 //método para crear un vehiculo tipo turismo.
 
